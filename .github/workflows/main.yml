@@ -20,7 +20,7 @@ jobs:
       - name: Install pylint
         run: pip install pylint #shell command = run
       - name: Run pylint
-        run: pylint src/main/python/helloworld.py
+        run: pylint src/main/python/microservice.py
 
   build_and_test:
     runs-on: ubuntu-latest
