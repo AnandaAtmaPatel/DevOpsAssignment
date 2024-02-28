@@ -19,6 +19,12 @@ jobs:
           python-version: 3.9
       - name: Install pylint
         run: pip install pylint #shell command = run
+      - name: Install flask
+        run: pip install flask #shell command = run
+      - name: Install jsonify
+        run: pip install jsonify #shell command = run
+      - name: Install requests
+        run: pip install requests #shell command = run
       - name: Run pylint
         run: pylint src/main/python/microservice.py
 
