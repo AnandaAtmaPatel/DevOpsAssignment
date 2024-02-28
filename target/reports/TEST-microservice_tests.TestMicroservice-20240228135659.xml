@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="microservice_tests.TestMicroservice-20240228135659" tests="1" file="microservice_tests.py" time="2.212" timestamp="2024-02-28T13:57:02" failures="0" errors="1" skipped="0">
+	<testcase classname="microservice_tests.TestMicroservice" name="test_add_endpoint" time="2.212" timestamp="2024-02-28T13:57:02">
+		<error type="ConnectionError" message="None: Max retries exceeded with url: /api/add?num1=3&amp;num2=5 (Caused by None)"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python312\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python312\Lib\unittest\case.py", line 634, in run
+    self._callTestMethod(testMethod)
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python312\Lib\unittest\case.py", line 589, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^^^
+  File "c:\users\dell\bits_lab\devopsassignment\src\unittest\python\microservice_tests.py", line 9, in test_add_endpoint
+    response = requests.get('http://127.0.0.1:5000/api/add?num1=3&num2=5')
+    ^^^^^^^^^^^^^^^^^
+  File "c:\users\dell\bits_lab\devopsassignment\.pybuilder\plugins\cpython-3.12.2.final.0\lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+      ^^^^^^^^^^^^^^^^^
+  File "c:\users\dell\bits_lab\devopsassignment\.pybuilder\plugins\cpython-3.12.2.final.0\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+    ^^^^^^^^^^^^^^^^^
+  File "c:\users\dell\bits_lab\devopsassignment\.pybuilder\plugins\cpython-3.12.2.final.0\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+    ^^^^^^^^^^^^^^^^^
+  File "c:\users\dell\bits_lab\devopsassignment\.pybuilder\plugins\cpython-3.12.2.final.0\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+    ^^^^^^^^^^^^^^^^^
+  File "c:\users\dell\bits_lab\devopsassignment\.pybuilder\plugins\cpython-3.12.2.final.0\lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+    ^^^^^^^^^^^^^^^^^
+requests.exceptions.ConnectionError: None: Max retries exceeded with url: /api/add?num1=3&num2=5 (Caused by None)
+]]></error>
+	</testcase>
+</testsuite>
