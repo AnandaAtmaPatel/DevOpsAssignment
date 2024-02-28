@@ -1,8 +1,5 @@
 import unittest
 import requests
-from flask import Flask, jsonify, request
-
-app = Flask(__name__)
 
 class TestMicroservice(unittest.TestCase):
     def test_add_endpoint(self):
