@@ -1,5 +1,5 @@
 """
-Microservice Module
+Microservice Module for DevOps Assignment
 This module defines a simple microservice using Flask, a lightweight web framework for Python.
 It provides two endpoints:
 - /api/hello: Returns a JSON response with a greeting message.
